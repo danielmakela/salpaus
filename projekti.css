@@ -1,3 +1,9 @@
 body{background-color:black;
 color:aquamarine;
-}#pro{text-align: center;
+}
+#pro{
+  width: 75%;
+  margin:auto;
+  background-color: blue;
+text-align: center;
+}
