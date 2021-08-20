@@ -38,7 +38,31 @@ console.log("boolean: " + juuvaiei);
 
 let pvm = "2021/08/18";
 console.log (pvm.split("/")[0]);
-function pvmFin(vuosi,kk){
-return kk+-.-+vuosi;
-)
-console.log(pvmFin(pvm.split("/")[0], pvm.split("/")[1()));
+//function pvmFin(vuosi,kk){
+
+//}
+console.log(pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]))
+
+function pvmFin(vuosi,kk,pv){
+  if (kk==03 || kk==04 || kk==05){
+    return "kevät "+pv+"."+kk+"."+vuosi;
+  }
+  else if(kk==06||kk==07||kk==08){
+    return "kesä "+pv+"."+kk+"."+vuosi;
+  }
+  else if (kk==09||kk==10||kk==11){
+    return "syksy "+pv+"."+kk+"."+vuosi;
+  }
+  else{
+    return "talvi "+pv+"."+kk+"."+vuosi;
+  }
+}
+console.log(document.querySelector('#kentta').type);
+console.log(document.querySelector('.lisaanappi').value);
+
+document.querySelector('.lisaanappi').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log(document.querySelector('#kentta').value);
+
+document.querySelector('.ilmotus').innerHTML = "kentän sisaltö on: <b>" + document.querySelector('#kentta').value + "</b>";
+});
