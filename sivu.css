@@ -8,4 +8,21 @@ color:skyblue;
   }
  ul {
   list-style-type: none;
- }
+ };
+.alert{padding: 20px;
+background-color:aqua;
+color:aquamarine;
+font-weight: bold;
+flot: right;
+font-size: 22px;
+line-hight: 20px;
+cursor: pointer;
+transition: 0,3s;
+}
+
+.closebtn:hover{
+ color: black;
+}
+.alert{
+  display: none;
+}

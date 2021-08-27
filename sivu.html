@@ -7,22 +7,25 @@
     </HEAD>
   <BODY>
     
-    <div class="asdf"> </div>
+    
     <FORM id="laatikot">
-      <div id="keskitys">
+        <div id="keskitys">
       <label> etunimi </label><input type="text" id="enimi"><BR>
      
-     <label> sukunimi </label> <input type="text" id="snimi"><BR>
+      <label> sukunimi </label> <input type="text" id="snimi"><BR>
       <input class="lisaanappi" type="submit" value="nappi"><BR>
-      <div class="alert">
-        
-      <div class="abc">
-        <ul class="boxit">
+        <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Warning empty form!
+        </div>
+        <div class="asdf"></div>
+        <div class="abc">
+      <ul class="boxit">
 
-      <li><label> SBC </label><input type="checkbox" id="A"></li>
-      <li><label> SBC </label><input type="checkbox" id="B"></li>
-      <li><label> SBC </label><input type="checkbox" id="C"></li>
-      <li><label> SBC </label><input type="checkbox" id="D"></li>
+      <li><label id="LA"> A </label><input type="checkbox" id="A"></li>
+      <li><label id="LB"> B </label><input type="checkbox" id="B"></li>
+      <li><label id="LC"> C </label><input type="checkbox" id="C"></li>
+      <li><label id="LD"> D </label><input type="checkbox" id="D"></li>
 </ul>
 <input class="nappi" type="submit" value="nappi"><BR>
     </FORM>
